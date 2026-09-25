@@ -10,7 +10,6 @@ const route = useRoute()
 const {
   cart,
   showCart,
-  toastMessage,
   cartCount,
   subtotal,
   deliveryFee,
@@ -418,15 +417,5 @@ function closeMobileMenu() {
         </template>
       </aside>
     </div>
-
-    <!-- Global Toast Notification -->
-    <transition name="toast-slide">
-      <div v-if="toastMessage" class="toast-popup" role="status">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"/>
-        </svg>
-        <span>{{ toastMessage }}</span>
-      </div>
-    </transition>
   </div>
 </template>

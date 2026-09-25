@@ -96,12 +96,8 @@ export function useCart() {
     }).format(value)
   }
 
-  function showToast(msg) {
-    toastMessage.value = msg
-    if (toastTimer) clearTimeout(toastTimer)
-    toastTimer = setTimeout(() => {
-      toastMessage.value = ''
-    }, 2200)
+  function showToast() {
+    // Toast notification telah dinonaktifkan di semua halaman
   }
 
   function openFoodDetail(food) {
